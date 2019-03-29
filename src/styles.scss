@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~hover.css";
+@import "assets/scss/galax";
+
+* {
+  font-family: 'Noto Serif', serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+.blog-container {
+  height: 800px;
+  width: 800px;
+
+  .content-container {
+    .body {
+      overflow: scroll;
+      height: 680px;
+
+      &::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+      }
+    }
+
+    .footer {
+      box-shadow: 0 -3px 5px -4px #9e9e9e;
+    }
+  }
+
+}
+
+.blog-list {
+  overflow: scroll;
+  height: 700px;
+  border-bottom: 1px solid #f3f3f3;
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  .card {
+    cursor: pointer;
+    //overflow: hidden;
+  }
+
+}
+
+.custom-modalbox {
+  mat-dialog-container {
+    padding: 0;
+  }
+}
+
